@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: car-service
+          uri: lb://CAR-SERVICE
+          predicates:
+            - Path=/api/car/**
+  application:
+    name: api-gateway
