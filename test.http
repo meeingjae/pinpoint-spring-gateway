@@ -1,4 +1,15 @@
 ### Get Car
 GET /localhost:8888/api/car/
-content-type:application/json
-accept:application/json
+content-type:application/json;charset=utf-8
+Accept:application/json;charset=utf-8
+
+### Get Car
+POST /localhost:8888/api/car/
+content-type:application/json;charset=utf-8
+Accept:application/json;charset=utf-8
+
+{
+  "name": "320d",
+  "price": 1234000,
+  "brandName": "BMW"
+}
