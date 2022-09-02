@@ -3,7 +3,7 @@ GET /localhost:8888/api/car/
 content-type:application/json;charset=utf-8
 Accept:application/json;charset=utf-8
 
-### Get Car
+### POST Car
 POST /localhost:8888/api/car/
 content-type:application/json;charset=utf-8
 Accept:application/json;charset=utf-8
